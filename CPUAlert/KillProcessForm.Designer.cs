@@ -88,11 +88,11 @@
             // 
             // ProcessNameLabel
             // 
-            this.ProcessNameLabel.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProcessNameLabel.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcessNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ProcessNameLabel.Location = new System.Drawing.Point(15, 26);
             this.ProcessNameLabel.Name = "ProcessNameLabel";
-            this.ProcessNameLabel.Size = new System.Drawing.Size(378, 69);
+            this.ProcessNameLabel.Size = new System.Drawing.Size(415, 69);
             this.ProcessNameLabel.TabIndex = 4;
             this.ProcessNameLabel.Text = "ProcessName";
             this.ProcessNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

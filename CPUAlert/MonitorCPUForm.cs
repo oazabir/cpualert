@@ -146,6 +146,7 @@
         {
             this.Hide();
             this.TaskbarNotifyIcon.ShowBalloonTip(5000, "CPU Monitor", "CPU Monitor is running...", ToolTipIcon.Info);
+            MemoryHelper.ClearMemory();
         }
 
         /// <summary>
@@ -157,6 +158,7 @@
                 {
                     _KillProcessForm.Hide();
                     _Monitor.Start();
+                    MemoryHelper.ClearMemory();
                 }));
         }
 

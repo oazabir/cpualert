@@ -53,6 +53,7 @@
     <Compile Include="CPUMonitorInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="MemoryHelper.cs" />
     <Compile Include="MonitorCPUForm.cs">
       <SubType>Form</SubType>
     </Compile>

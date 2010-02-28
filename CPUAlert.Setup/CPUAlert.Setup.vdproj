@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9BC3257B58A341C3A9CC3A17ACBAE6C3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7DB6322B8BC444CDB03426A5973478F2"
         "MsmSig" = "8:_UNDEFINED"
@@ -87,6 +93,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5.SP1"
+                    {
+                    "Name" = "8:.NET Framework 3.5 SP1"
+                    "ProductCode" = "8:Microsoft.Net.Framework.3.5.SP1"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
     }
@@ -173,6 +192,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9BC3257B58A341C3A9CC3A17ACBAE6C3"
+            {
+            "SourcePath" = "8:..\\CPUAlert\\Icon.ico"
+            "TargetName" = "8:Icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_162FB9E3E59A416883519132B20452A9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -240,14 +279,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CPUMonitor"
-        "ProductCode" = "8:{6460D2D7-8DD8-4051-B23F-61208B96A66A}"
-        "PackageCode" = "8:{177C0CBA-8226-4451-B2C6-E977F6D0A017}"
+        "ProductCode" = "8:{27E1E7A0-B1D5-4212-B0D3-F9EDE2CBBC89}"
+        "PackageCode" = "8:{394420F7-E25E-4030-B93E-1D212B2374B3}"
         "UpgradeCode" = "8:{3F9444E9-7740-4524-943E-E282A1873187}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Omar AL Zabir"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://msmvps.com/omar"
@@ -257,7 +296,7 @@
         "Keywords" = "8:CPU, Memory"
         "ARPCOMMENTS" = "8:CPU Monitor monitors CPU and Memory usage for rougue applications and suggests you to close them in order to save your CPU, Battery life and freeup memory for better performance"
         "ARPURLINFOABOUT" = "8:http://msmvps.com/omar"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_9BC3257B58A341C3A9CC3A17ACBAE6C3"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -789,7 +828,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7DB6322B8BC444CDB03426A5973478F2"
             {
-            "SourcePath" = "8:..\\CPUMonitor\\CPUMonitor\\obj\\Debug\\CPUMonitor.exe"
+            "SourcePath" = "8:..\\CPUAlert\\obj\\Release\\CPUMonitor.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_162FB9E3E59A416883519132B20452A9"
