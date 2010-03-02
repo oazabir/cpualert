@@ -376,5 +376,15 @@
         }
 
         #endregion Methods
+
+        private void CPUAlertLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://code.google.com/p/cpualert/");
+        }
+
+        private void MeLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://msmvps.com/blogs/omar/");
+        }
     }
 }

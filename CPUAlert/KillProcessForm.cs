@@ -65,6 +65,8 @@
             this.Show();
             this.Refresh();
             this.TopMost = true;
+
+            this.DummyTextBox.Focus();
         }
 
         private void IgnoreButton_Click(object sender, EventArgs e)
@@ -97,5 +99,10 @@
         }
 
         #endregion Methods
+
+        private void KillProcessForm_Shown(object sender, EventArgs e)
+        {
+            this.DummyTextBox.Focus();
+        }
     }
 }

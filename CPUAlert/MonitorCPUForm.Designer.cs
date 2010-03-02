@@ -36,6 +36,9 @@
             this.TaskbarContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CPUAlertLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.MeLinkLabel = new System.Windows.Forms.LinkLabel();
             this.TaskbarContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,10 +48,12 @@
             // 
             // PropertyGrid
             // 
-            this.PropertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PropertyGrid.Location = new System.Drawing.Point(0, 0);
+            this.PropertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.PropertyGrid.Location = new System.Drawing.Point(1, 43);
             this.PropertyGrid.Name = "PropertyGrid";
-            this.PropertyGrid.Size = new System.Drawing.Size(585, 243);
+            this.PropertyGrid.Size = new System.Drawing.Size(580, 313);
             this.PropertyGrid.TabIndex = 0;
             this.PropertyGrid.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.PropertyGrid_PropertyValueChanged);
             // 
@@ -84,11 +89,47 @@
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // CPUAlertLinkLabel
+            // 
+            this.CPUAlertLinkLabel.AutoSize = true;
+            this.CPUAlertLinkLabel.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPUAlertLinkLabel.Location = new System.Drawing.Point(12, 10);
+            this.CPUAlertLinkLabel.Name = "CPUAlertLinkLabel";
+            this.CPUAlertLinkLabel.Size = new System.Drawing.Size(87, 23);
+            this.CPUAlertLinkLabel.TabIndex = 1;
+            this.CPUAlertLinkLabel.TabStop = true;
+            this.CPUAlertLinkLabel.Text = "CPU Alert";
+            this.CPUAlertLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.CPUAlertLinkLabel_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(106, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Created By";
+            // 
+            // MeLinkLabel
+            // 
+            this.MeLinkLabel.AutoSize = true;
+            this.MeLinkLabel.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MeLinkLabel.Location = new System.Drawing.Point(173, 16);
+            this.MeLinkLabel.Name = "MeLinkLabel";
+            this.MeLinkLabel.Size = new System.Drawing.Size(95, 17);
+            this.MeLinkLabel.TabIndex = 3;
+            this.MeLinkLabel.TabStop = true;
+            this.MeLinkLabel.Text = "Omar AL Zabir";
+            this.MeLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MeLinkLabel_LinkClicked);
+            // 
             // MonitorCPUForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 243);
+            this.ClientSize = new System.Drawing.Size(581, 357);
+            this.Controls.Add(this.MeLinkLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CPUAlertLinkLabel);
             this.Controls.Add(this.PropertyGrid);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -101,6 +142,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MonitorCPUForm_FormClosing);
             this.TaskbarContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -112,6 +154,9 @@
         private System.Windows.Forms.ContextMenuStrip TaskbarContextMenu;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.LinkLabel CPUAlertLinkLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel MeLinkLabel;
     }
 }
 

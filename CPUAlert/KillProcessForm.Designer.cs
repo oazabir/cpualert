@@ -49,7 +49,7 @@
             this.IgnoreButton.Location = new System.Drawing.Point(234, 152);
             this.IgnoreButton.Name = "IgnoreButton";
             this.IgnoreButton.Size = new System.Drawing.Size(75, 23);
-            this.IgnoreButton.TabIndex = 3;
+            this.IgnoreButton.TabIndex = 4;
             this.IgnoreButton.Text = "&Ignore";
             this.IgnoreButton.UseVisualStyleBackColor = true;
             this.IgnoreButton.Click += new System.EventHandler(this.IgnoreButton_Click);
@@ -161,7 +161,7 @@
             this.RestartButton.Location = new System.Drawing.Point(153, 152);
             this.RestartButton.Name = "RestartButton";
             this.RestartButton.Size = new System.Drawing.Size(75, 23);
-            this.RestartButton.TabIndex = 10;
+            this.RestartButton.TabIndex = 3;
             this.RestartButton.Text = "&Restart";
             this.RestartButton.UseVisualStyleBackColor = true;
             this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
@@ -189,6 +189,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KillProcessForm";
             this.Text = "Warning! Application taking high {0}!";
+            this.Shown += new System.EventHandler(this.KillProcessForm_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.KillProcessForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
